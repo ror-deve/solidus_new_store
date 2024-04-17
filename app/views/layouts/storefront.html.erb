@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Storenew</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <%= javascript_include_tag 'spree/frontend/custom' %>
+    <%= stylesheet_link_tag 'spree/frontend/custom', media: 'screen' %>
+    <style> 
+      .header {
+        border-bottom: 1px solid $color-border-light;
+      }
+
+      .header__primary-navigation {
+        border-top: 1px solid $color-border-light;
+      }
+
+      .header__secondary-navigation {
+        margin: 0 auto;
+        max-width: 114rem;
+      }
+       
+      .fixed-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: white;  
+        z-index: 1000; 
+      }
+
+      body {
+        padding-top: 60px;  
+      }
+    </style>
+  </head>
+
+  <body>
+    <header class="header fixed-header">
+       
+      <%= render partial: 'spree/shared/header' %>
+    </header>
+    <%= flash_messages %>
+    <%= yield %>
+    <%= render partial: 'spree/shared/footer' %>
+  </body>
+</html>

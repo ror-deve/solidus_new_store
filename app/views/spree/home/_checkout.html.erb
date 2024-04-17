@@ -1,0 +1,291 @@
+
+<main id="MainContent" style="background-color: #f4f4f4;">
+    <div class="cart">
+        <div class="container-checkout">
+            <form class="mb-0" action="/cart" method="post" novalidate>
+                <div class="row">
+                    <div class="col-lg-7 col-xl-7 mt-20 mt-lg-40 mt-xl-40 mb-20 mb-sm-20 mb-ls-20 mb-xl-20 mb-md-20">
+                        <div class="cart__items mb-10">
+                            <div class="py-20 border" style="background-color: #ffffff;padding: 30px;">
+                                <div class="register">
+                                    <h4 class="h4 mb-15 text-center">Express Checkout</h4>
+                                    <div class="text-center">
+                                        <button type="submit" value="REVIEW ORDER" class="btn btn--full btn--secondary" style="height: 56px;background-color: #009cde;border:0">
+                                            <svg class="paypal_button_svg__xt_ap" width="95" height="24" viewBox="0 0 95 24" xmlns="http://www.w3.org/2000/svg">
+                                                <title>Symbol/Verified/Paypal/white</title>
+                                                <g id="Symbol/Verified/Paypal/white" fill="none" fill-rule="evenodd">
+                                                    <g id="PayPal" fill="#FFF" fill-rule="nonzero">
+                                                        <path d="M10.72.531H4.102a.92.92 0 0 0-.909.776L.516 18.28a.551.551 0 0 0 .546.636h3.16a.92.92 0 0 0 .909-.777l.722-4.577a.919.919 0 0 1 .907-.777h2.095c4.36 0 6.876-2.11 7.533-6.29.297-1.83.013-3.267-.843-4.273-.941-1.105-2.61-1.69-4.825-1.69zm.764 6.199c-.362 2.375-2.177 2.375-3.931 2.375h-.999l.7-4.436a.551.551 0 0 1 .546-.465h.457c1.196 0 2.323 0 2.906.681.347.407.453 1.01.32 1.845zM30.504 6.653h-3.17a.552.552 0 0 0-.544.466l-.14.886-.222-.321c-.686-.996-2.216-1.329-3.743-1.329-3.503 0-6.494 2.653-7.077 6.374-.303 1.856.128 3.63 1.181 4.868.966 1.138 2.348 1.613 3.992 1.613 2.822 0 4.387-1.815 4.387-1.815l-.142.88a.551.551 0 0 0 .544.64h2.855a.92.92 0 0 0 .909-.778L31.047 7.29a.55.55 0 0 0-.543-.637zm-4.418 6.169c-.306 1.81-1.743 3.026-3.576 3.026-.92 0-1.655-.295-2.128-.855-.468-.555-.646-1.346-.497-2.227.285-1.795 1.747-3.05 3.551-3.05.9 0 1.632.3 2.114.863.483.57.675 1.366.536 2.243zM47.383 6.653h-3.185a.923.923 0 0 0-.761.404l-4.393 6.47-1.862-6.218a.922.922 0 0 0-.882-.656h-3.13a.552.552 0 0 0-.524.73l3.509 10.295-3.299 4.656a.551.551 0 0 0 .45.87h3.181a.918.918 0 0 0 .756-.394L47.836 7.52a.551.551 0 0 0-.453-.867zM57.928.531h-6.62a.92.92 0 0 0-.907.776L47.724 18.28a.55.55 0 0 0 .544.636h3.397c.315 0 .585-.23.634-.543l.76-4.811a.919.919 0 0 1 .908-.777h2.094c4.36 0 6.876-2.11 7.534-6.29.297-1.83.011-3.267-.845-4.273-.94-1.105-2.607-1.69-4.822-1.69zm.763 6.199c-.36 2.375-2.175 2.375-3.93 2.375h-.998l.701-4.436a.55.55 0 0 1 .544-.465h.458c1.194 0 2.322 0 2.905.681.347.407.453 1.01.32 1.845zM77.71 6.653h-3.167a.549.549 0 0 0-.544.466l-.14.886-.223-.321c-.686-.996-2.215-1.329-3.742-1.329-3.502 0-6.493 2.653-7.075 6.374-.302 1.856.126 3.63 1.18 4.868.967 1.138 2.347 1.613 3.991 1.613 2.822 0 4.387-1.815 4.387-1.815l-.141.88a.552.552 0 0 0 .546.64h2.853a.92.92 0 0 0 .908-.778L78.257 7.29a.553.553 0 0 0-.547-.637zm-4.417 6.169c-.304 1.81-1.743 3.026-3.576 3.026-.919 0-1.656-.295-2.128-.855-.469-.555-.645-1.346-.498-2.227.288-1.795 1.747-3.05 3.552-3.05.9 0 1.632.3 2.113.863.485.57.677 1.366.537 2.243zM81.447.997L78.73 18.279a.55.55 0 0 0 .544.636h2.731a.918.918 0 0 0 .909-.777l2.679-16.97a.551.551 0 0 0-.544-.638H81.99a.553.553 0 0 0-.544.467z" id="Shape"></path>
+                                                    </g>
+                                                </g>
+                                            </svg>
+                                        </button>
+                                        <h6 onclick="myFunctionPay()" class="h6 mt-15 mb-0 text-center">Show More Options &#9660;</h6>
+                                    </div>
+                                <div class="col-12 mt-15" id="payoptions" style="display:none">
+                                    <p class="col-4 align-items-center text-center mb-0 pb-0">Stripe</p>
+                                    <p class="col-4 align-items-center text-center mb-0 pb-0">Google</p>
+                                    <p class="col-4 align-items-center text-center mb-0 pb-0">Amazon</p>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                              <div class="cart__items mb-10">
+                            <div class="py-20 border" style="background-color: #ffffff;padding: 30px;">
+                                <div class="register">
+                                    
+                                        <span style="align-items: center;background-color: #fff;border: 1px solid #e5e5e5;border-radius: 20px;color: #4c4c4c;display: flex;height: 30px;justify-content: center;text-align: center;width: 30px;margin-right: 5px;float:left">1</span>
+                                        <h4 class="h4 mb-15 pt-5">Contact</h4>
+                                
+                                    <div class="col-12 ml-0 pl-0 mr-0 pr-0">
+                                            <input class="mb-5" type="password" name="customer[password]" id="CreatePassword" class="" placeholder="Email Address" required="required" style="height: 56px;">
+                                            <div style="color: #d72b00;">Valid Email is required</div>
+                                        </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="cart__items mb-10">
+                            <div class="py-20 border" style="background-color: #ffffff;padding: 30px;">
+                                <div class="register">
+                                    <div>
+                                        <span style="align-items: center;background-color: #fff;border: 1px solid #e5e5e5;border-radius: 20px;color: #4c4c4c;display: flex;height: 30px;justify-content: center;text-align: center;width: 30px;margin-right: 5px;float:left">2</span>
+                                        <h4 class="h4 mb-15 pt-5">Shipping Address</h4>
+                                    </div>
+                                    <form method="post" action="/account" id="create_customer" accept-charset="UTF-8"><input type="hidden" name="form_type" value="create_customer"><input type="hidden" name="utf8" value="✓">
+                                        <div style="display: flex;" class="d-flex align-items-center flex-column flex-xl-row flex-lg-row flex-sm-column">
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ml-0 pl-0">
+                                                <label for="FirstName" type="text" name="customer[first_name]" id="FirstNameShipping" class="" style="cursor: text;display: block;line-height: 1.5;margin: 0 10px 5px 0;padding: 18px 0 0 16px;  ;position: absolute;transition: all .1s ease-in-out;color: #858585;">First Name</label>
+                                                <input onClick="foo()" onBlur="foox()" class="mb-5" type="text" id="FirstNameShip" required="required" autofocus="" style="padding-right: 10px;margin-right: 10px;height: 56px;font-size:15px;padding-top: 15px;padding-left:10px">
+                                                <div class="pb-20" style="color: #d72b00;">First Name is required</div>
+                                            </div>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 mr-0 pr-0 ml-0 pl-0">
+                                                <input class="mb-5" type="text" class="d-flex flex-row" name="customer[last_name]" id="LastName" placeholder="Last Name" required="required" style="height: 56px;">
+                                                <div class="pb-20" style="color: #d72b00;">Last Name is required</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 ml-0 pl-0 mr-0 pr-0">
+                                            <input class="mb-5" type="email" name="customer[email]" id="Email" placeholder="Address Line 1" value="" spellcheck="false" autocomplete="off" autocapitalize="none" required="required" style="height: 56px;">
+                                            <div class="pb-20" style="color: #d72b00;">Address1 is required</div>
+                                        </div>
+                                        <input type="email" name="customer[email]" id="Email" class="" placeholder="Address Line 2 (Optional)" value="" spellcheck="false" autocomplete="off" autocapitalize="none" required="required" style="height: 56px;">
+                                        <div class="d-flex flex-sm-column column flex-lg-row flex-xl-row">
+                                            <select id="cars" class="" name="cars" placeholder="Country" style="padding-right: 10px;margin-right: 10px;height: 56px;">
+                                                <option value="volvo">Country</option>
+                                            </select>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ml-0 pl-0 mr-0 pr-0">
+                                                <input class="mb-5" type="text" class="" name="customer[last_name]" id="LastName" placeholder="City" required="required" style="height: 56px;">
+                                                <div class="pb-20" style="color: #d72b00;">City is required</div>
+                                            </div>
+                                        </div>
+                                        <div class="d-flex flex-sm-column column flex-lg-row flex-xl-row">
+                                            <select id="cars" class="d-flex flex-row" class="flex-sm-column" name="cars" placeholder="State" style="padding-right: 10px;margin-right: 10px;height: 56px;">
+                                                <option value="volvo">State*</option>
+                                            </select>
+                                            <div class="col-xl-6 col-lg-6 col-md-6 col-sm-12 ml-0 pl-0 mr-0 pr-0">
+                                                <input class="mb-5" type="text" name="customer[last_name]" id="LastName" placeholder="Zip" required="required" style="height: 56px;">
+                                                <div class="pb-20" style="color: #d72b00;">Postal Code Required: Invalid postal code for US</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 ml-0 pl-0 mr-0 pr-0">
+                                            <input class="mb-5" type="password" name="customer[password]" id="CreatePassword" class="" placeholder="Phone Number" required="required" style="height: 56px;">
+                                            <div class="pb-20" style="color: #d72b00;">Valid Phone Number is Required</div>
+                                        </div>
+                                        
+                                        <div class="text-center">
+                                            <input type="submit" value="Continue to Billing Information" class="btn btn--full btn--secondary" style="height: 56px;">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="cart__items py-20">
+                            <div class="py-20 border" style="background-color: #ffffff;padding: 30px;">
+                                <div class="register">
+                                    <div>
+                                        <span style="align-items: center;background-color: #fff;border: 1px solid #e5e5e5;border-radius: 20px;color: #4c4c4c;display: flex;height: 30px;justify-content: center;text-align: center;width: 30px;margin-right: 5px;float:left">3</span>
+                                        <h4 class="h4 mb-15 pt-3">Shipping Method</h4>
+                                    </div>
+                                    
+                                  
+
+                                            <form class="mb-0 pb-0" action="/action_page.php">
+<div class="row">
+
+<div class="col-6">
+<input type="radio" id="css" name="fav_language" style="height: 20px;width: 20px;">
+<label for="css">Standard Shipping</label>
+<p>3 to 7 Business Days</p>
+</div>
+<div class="col-6" style="text-align: right;">
+<p>Free</p>
+</div>
+</div>
+
+<div class="row">
+
+<div class="col-6">
+<input type="radio" id="css" name="fav_language" style="height: 20px;width: 20px;">
+<label for="css">Priority Shipping</label>
+<p>2 to 4 Business Days</p>
+</div>
+<div class="col-6" style="text-align: right;">
+<p>$10.00</p>
+</div>
+</div>
+
+
+<div class="row">
+
+<div class="col-6">
+<input type="radio" id="javascript" name="fav_language" style="height: 20px;width: 20px;">
+<label for="javascript">Express Shipping</label>
+<p class="mb-0 pb-0">1 to 3 Business Days</p>
+
+</div>
+<div class="col-6" style="text-align: right;">
+<p>$15.00</p>
+</div>
+</div>
+
+</form>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <div class="cart__items">
+                            <div class="py-20 border" style="background-color: #ffffff;padding: 30px;">
+                                <div class="register">
+                                    <div>
+                                        <span style="align-items: center;background-color: #fff;border: 1px solid #e5e5e5;border-radius: 20px;color: #4c4c4c;display: flex;height: 30px;justify-content: center;text-align: center;width: 30px;margin-right: 5px;float:left">4</span>
+                                        <h4 class="h4 mb-15 pt-3">Billing Details</h4>
+                                    </div>
+                                    <h3 class="mb-15">Secure Credit Card Payment</h3>
+                                    <form class="mb-0 pb-0" method="post" action="/account" id="create_customer" accept-charset="UTF-8"><input type="hidden" name="form_type" value="create_customer"><input type="hidden" name="utf8" value="✓">
+                                        <input type="email" name="customer[email]" id="Email" class="" placeholder="First and Last" value="" spellcheck="false" autocomplete="off" autocapitalize="none" required="required" style="height: 56px;">
+                                        <div>
+                                            <label for="cardNumber" style="cursor: text;display: block;line-height: 1.5;margin: 0 10px 5px 0;padding: 18px 0 0 12px;  padding-top: 5px;position: absolute;transition: all .1s ease-in-out;color: #858585;">Card Number</label>
+                                            <input type="tel" class="formatted_input_input__MVJYd sensitive" data-hj-suppress="true" name="cardNumber" id="cardNumber" placeholder="****" required="" autocorrect="off" aria-label="card number" data-encrypted-name="number" maxlength="20" spellcheck="false" value="" style="height: 56px;width: 100%;">
+                                        </div>
+                                        <div style="display: flex;">
+                                            <div style="width: 100%;padding-right: 10px;">
+                                                <label for="expirydate" style="cursor: text;display: block;line-height: 1.5;margin: 0 10px 5px 0;padding: 18px 0 0 12px;  padding-top: 5px;position: absolute;transition: all .1s ease-in-out;color: #858585;">Expiry Date</label>
+                                                <input type="text" name="customer[first_name]" id="expirydate" placeholder="MM/YY" required="required" autofocus="" style="padding-right: 10px;margin-right: 10px;height: 56px;margin-bottom: 8px;">
+                                            </div>
+                                            <div style="width: 100%;">
+                                                <label for="securitycode" style="cursor: text;display: block;line-height: 1.5;margin: 0 10px 5px 0;padding: 18px 0 0 12px;  padding-top: 5px;position: absolute;transition: all .1s ease-in-out;color: #858585;">Security Code</label>
+                                                <input type="text" name="customer[last_name]" id="securitycode" placeholder="***" required="required" style="height: 56px;margin-bottom: 8px;">
+                                            </div>
+                                        </div>
+                                        <input onclick="myFunctionShip()" type="checkbox" id="sameshipping" name="sameshipping" value="sameshipping" style="margin-bottom: 20px;" checked="checked">
+                                        <span onclick="myFunctionShip()" for="sameshippinglink" id="sameshippinglink">Same as Shipping</span>
+
+
+
+
+                                        <div id="shipping-information" style="display:none;">
+                                            <div style="display: flex;">
+                                                <input type="text" name="customer[first_name]" id="FirstName1" placeholder="First Name" required="required" autofocus="" style="padding-right: 10px;margin-right: 10px;height: 56px;">
+                                                <input type="text" name="customer[last_name]" id="LastName" placeholder="Last Name" required="required" style="height: 56px;">
+                                            </div>
+                                            <input type="email" name="customer[email]" id="Email" class="" placeholder="Address 1" value="" spellcheck="false" autocomplete="off" autocapitalize="none" required="required" style="height: 56px;">
+                                            <input type="email" name="customer[email]" id="Email" class="" placeholder="Address 2 (Optional)" value="" spellcheck="false" autocomplete="off" autocapitalize="none" required="required" style="height: 56px;">
+                                            <div style="display: flex;">
+                                                <select id="cars" name="cars" placeholder="Country" style="padding-right: 10px;margin-right: 10px;height: 56px;">
+                                                    <option value="volvo">Country</option>
+                                                </select>
+                                                <input type="text" name="customer[last_name]" id="LastName" placeholder="City" required="required" style="height: 56px;">
+                                            </div>
+                                            <div style="display: flex;">
+                                                <select id="cars" name="cars" placeholder="Country" style="padding-right: 10px;margin-right: 10px;height: 56px;">
+                                                    <option value="volvo">State*</option>
+                                                </select>
+                                                <input type="text" name="customer[last_name]" id="LastName" placeholder="Zip" required="required" style="height: 56px;">
+                                            </div>
+                                            <input type="text" name="customer[first_name]" id="FirstName2" placeholder="Phone Number" required="required" autofocus="" style="padding-right: 10px;margin-right: 10px;height: 56px;">
+                                        </div>
+                                        <div class="text-center">
+                                            <input type="submit" value="Pay Now" class="btn btn--full btn--secondary" style="height: 56px;">
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-xl-5 mt-20 mt-sm-0 mt-lg-40 mt-xl-40 mb-20 " data-sticky-container>
+                        <div class="sticky" data-sticky-for="1025" data-sticky-class="is-sticky" data-margin-top="5">
+                            <div class="mb-10">
+                                <aside class="cart__sidebar p-20 border" style="background-color: #ffffff;">
+                                    <h3 class="h3 mb-15">Order Summary</h3>
+                                    <div class="pt-0 row">
+                                        <h5 class="mb-10 col-6" style="color:#858585;">Shipping</h5>
+                                        <h5 class="mb-10 col-6" style="text-align: right;color:#858585;"><span class="money">Free</span></h5>
+                                    </div>
+                                      <div class="pt-0 row">
+                                        <h5 onclick="myFunctionCoupon()" id="promocode" class="mb-10 col-12" style="color:#858585;">Apply a promo code</h5>
+                                    </div>
+                                    
+                                    <div id="couponcode" class="col-12 pl-0 pr-0" style="display: none;">
+                                          <input class="" style="height: 56px;" type="text" id="PromoCode" required="required" autofocus="">
+                                          <button class="align-items-center text-center" style="border: 1px solid transparent;height: 56px;width: 100px;display: flex;justify-content: center;background-color: #141414;border-color: #141414;color: #fff;" type="submit" aria-label="apply promo code">Apply</button>
+
+
+                                    </div>
+
+                                    <div class="pt-0 row">
+                                        <h5 class="mb-10 col-6" style="color:#858585;">Items</h5>
+                                        <h5 class="mb-10 col-6" style="text-align: right;color:#858585;"><span class="money">1</span></h5>
+                                    </div>
+                                    <div class="pt-0 row">
+                                        <h5 class="mb-10 col-6" style="color:#858585;">Tax</h5>
+                                        <h5 class="mb-10 col-6" style="text-align: right;color:#858585;"><span class="money">$10.46</span></h5>
+                                    </div>
+                                    
+                                      <div class="pt-0 row">
+                                        <h5 class="mb-15 col-6" style="color:#858585;">Promo: PromoCode</h5>
+                                        <h5 class="mb-15 col-6" style="text-align: right;color:#858585;"><span class="money">-$15.49</span></h5>
+                                    </div>
+                                    <div class="pt-0 row">
+                                        <h4 class="mb-15 col-6">Total</h4>
+                                        <h4 class="mb-15 col-6" style="text-align: right;"><span class="money">$550.55</span></h4>
+                                    </div>
+                                </aside>
+                            </div>
+                            <aside class="cart__sidebar p-20 border" style="background-color: #ffffff;">
+                                <h3 class="h3 mb-15">Order Details</h3>
+                                <div class="footer__border border-top"></div>
+                                <div class="row">
+                                    <%= image_tag("square_portrait_1.jpg", width: "80", height: "100", style: "float: left;", class: "mt-15") %>
+                                    <div class="col-7 mt-15">
+                                        <h5 class="pb-0 mb-10">Product Title</h5>
+                                        <p class="pb-0 mb-10">Size: 8"x10"</p>
+                                    </div>
+                                    <div class="col-6 mt-15 mb-15">
+                                        <h5 class="align-items-center text-center mb-0" style="border: 1px solid #e5e5e5;width: 90px;height: 36px;display: grid;" class="pb-0 mb-10 text-center">Qty 1</h5>
+                                    </div>
+                                    <div class="col-6 mt-15">
+                                        <h5 class="pb-0 mt-8 mb-10" style="text-align: right;">$550.55</h5>
+                                    </div>
+                                </div>
+                                <div class="footer__border border-top"></div>
+                                  <div class="row">
+                                    <%= image_tag("square_portrait_1.jpg", width: "80", height: "100", style: "float: left;", class: "mt-15") %>
+                                    <div class="col-7 mt-15">
+                                        <h5 class="pb-0 mb-10">Product Title</h5>
+                                        <p class="pb-0 mb-10">Size: 8"x10"</p>
+                                    </div>
+                                    <div class="col-6 mt-15">
+                                        <h5 class="align-items-center text-center mb-0" style="border: 1px solid #e5e5e5;width: 90px;height: 36px;display: grid;" class="pb-0 mb-10 text-center">Qty 1</h5>
+                                    </div>
+                                    <div class="col-6 mt-15">
+                                        <h5 class="pb-0 mt-8 mb-10" style="text-align: right;">$550.55</h5>
+                                    </div>
+                                </div>
+                            </aside>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</main>

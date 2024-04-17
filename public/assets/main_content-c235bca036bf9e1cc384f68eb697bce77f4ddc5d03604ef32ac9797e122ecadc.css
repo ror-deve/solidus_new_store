@@ -1,0 +1,85 @@
+.promobox__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.promobox__content_inner {
+    width: 100%;
+}
+
+.promobox__btn {
+    margin-top: 35px; /* Adjust as needed */
+}
+
+.promobox__btn.btn--secondary {
+    /* Add styles for secondary button */
+    background-color: #858585;
+    color: #858585;
+    /* Add other styles as needed */
+}
+
+.promobox__btn.btn--secondary:hover {
+    /* Add styles for hover state */
+    background-color: #858585;
+    color: #080404;
+    /* Add other styles as needed */
+}
+
+/* .promobox__btn { */
+    /* margin-top: 35px;  */
+    /* padding: 10px 15px;  */
+    /* Or you can set a specific width */
+    /* width: 150px; */
+/* } */
+
+/* Button background and border color */
+.btn--secondary,
+.irs .irs-slider {
+    background-color: #141414;
+    border-color: #141414;
+}
+
+/* Button text size and line height */
+.btn {
+    font-size: 13px;
+    line-height: 14px;
+}
+
+/* Button minimum height and padding */
+.btn,
+.spr-button,
+.spr-summary-actions-newreview {
+    min-height: 35px;
+    padding: 0 16px;
+}
+
+/* Button display and alignment */
+.btn,
+.spr-button,
+.spr-summary-actions-newreview {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}
+
+/* Additional padding classes */
+.pl-20,
+.px-20 {
+    padding-left: 20px !important;
+}
+
+.pr-20,
+.px-20 {
+    padding-right: 20px !important;
+}
+
+/* Additional margin classes */
+.mt-35,
+.my-35 {
+    margin-top: 35px !important;
+}
